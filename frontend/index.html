@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy Mat Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>ENERGY GENERATING MAT</h1>
+  </header>
+  <section class="data-section">
+    <div style="background: linear-gradient(180deg, #BFB1FF 0%, rgba(246, 244, 253, 0.815) 100%); border-radius: 24px; border: none;" class="data-card">
+      <h2>STEPS PER HOUR</h2>
+      <p id="steps" class="data-value">500</p>
+  </div>
+  <div style="background: linear-gradient(180deg, #BFB1FF 0%, rgba(246, 244, 253, 0.815) 100%); border-radius: 24px; border: none;" class="data-card">
+      <h2>VOLTAGE</h2>
+      <p id="voltage" class="data-value">1000 W</p>
+  </div>
+  </section>
+  <section class="graph-section">
+    <canvas id="myChart"></canvas>
+    <script src="chart.js"></script>
+  </section>
+  <button style="width: 40px; height: 40px; background-color: #333; color: #fff; border: none; border-radius: 5px; font-size: 20px; cursor: pointer; font-family: 'Kanit', sans-serif; display: flex; justify-content: center; align-items: center; margin: 20px auto;" class="refresh-button" onclick="fetchNewData()">↻</button>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>

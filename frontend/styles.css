@@ -1,0 +1,80 @@
+body {
+    font-family: Gill Sans, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1E1E1E; 
+    color: #FFFFFF;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.data-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.data-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    flex: 1;
+    transition: transform 0.3s;
+}
+
+.data-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.data-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.data-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.graph-section {
+    background-color: #a6a6a6;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto; /* Center the graph */
+    max-width: 80%; /* Make the graph bigger */
+    /* max-height: 100px; */
+}
+
+.refresh-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Gill Sans, sans-serif;
+    transition: background-color 0.3s;
+    outline: none;
+}
+
+.refresh-button:hover {
+    background-color: #444;
+}
